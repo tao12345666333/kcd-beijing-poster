@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>KCD Beijing 2025</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+        }
+        .tech-border {
+            border: 2px solid #4299e1;
+            position: relative;
+        }
+        .tech-border::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 20px;
+            height: 20px;
+            border-top: 2px solid #4299e1;
+            border-left: 2px solid #4299e1;
+        }
+        .tech-border::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+            width: 20px;
+            height: 20px;
+            border-bottom: 2px solid #4299e1;
+            border-right: 2px solid #4299e1;
+        }
+        .logo-container {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .logo-container:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen text-white p-8">
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-6xl font-bold mb-4 text-blue-300">KCD Beijing 2025</h1>
+            <p class="text-2xl text-blue-200">Kubernetes Community Days</p>
+        </div>
+
+        <!-- Date and Time -->
+        <div class="tech-border p-6 mb-8 rounded-lg bg-gray-900 bg-opacity-50">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold mb-2">2025年3月15日</h2>
+                <p class="text-xl">09:00 - 18:00</p>
+            </div>
+        </div>
+
+        <!-- Schedule -->
+        <div class="space-y-8 mb-12">
+            <!-- Morning Keynotes -->
+            <div class="tech-border p-6 rounded-lg bg-gray-900 bg-opacity-50">
+                <h3 class="text-2xl font-bold mb-4 text-blue-300">上午场 - Keynotes</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <span class="text-blue-400 w-24">09:00</span>
+                            <span>Keynote 1</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-blue-400 w-24">09:30</span>
+                            <span>Keynote 2</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <span class="text-blue-400 w-24">10:00</span>
+                            <span>Keynote 3</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-blue-400 w-24">10:30</span>
+                            <span>Keynote 4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Afternoon Tracks -->
+            <div class="tech-border p-6 rounded-lg bg-gray-900 bg-opacity-50">
+                <h3 class="text-2xl font-bold mb-4 text-blue-300">下午场 - 双轨会议</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 text-blue-400">AI Track</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <span class="text-blue-400 w-24">11:00</span>
+                                <span>Topic 1</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-blue-400 w-24">11:30</span>
+                                <span>Topic 2</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-blue-400 w-24">13:30</span>
+                                <span>Topic 3</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-blue-400 w-24">14:00</span>
+                                <span>Topic 4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 text-blue-400">原生 Track</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <span class="text-blue-400 w-24">11:00</span>
+                                <span>Topic 1</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-blue-400 w-24">11:30</span>
+                                <span>Topic 2</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-blue-400 w-24">13:30</span>
+                                <span>Topic 3</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-blue-400 w-24">14:00</span>
+                                <span>Topic 4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sponsors -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold mb-6 text-center text-blue-300">赞助商</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="tech-border rounded-lg bg-gray-900 bg-opacity-50 overflow-hidden">
+                    <div class="logo-container p-4">
+                        <img src="/api/placeholder/200/200" alt="赞助商 1" class="w-full h-full object-contain" />
+                    </div>
+                </div>
+                <div class="tech-border rounded-lg bg-gray-900 bg-opacity-50 overflow-hidden">
+                    <div class="logo-container p-4">
+                        <img src="/api/placeholder/200/200" alt="赞助商 2" class="w-full h-full object-contain" />
+                    </div>
+                </div>
+                <div class="tech-border rounded-lg bg-gray-900 bg-opacity-50 overflow-hidden">
+                    <div class="logo-container p-4">
+                        <img src="/api/placeholder/200/200" alt="赞助商 3" class="w-full h-full object-contain" />
+                    </div>
+                </div>
+                <div class="tech-border rounded-lg bg-gray-900 bg-opacity-50 overflow-hidden">
+                    <div class="logo-container p-4">
+                        <img src="/api/placeholder/200/200" alt="赞助商 4" class="w-full h-full object-contain" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Community Partners -->
+        <div>
+            <h3 class="text-2xl font-bold mb-6 text-center text-blue-300">合作社区</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-4">
+                <!-- 20 Community Partners -->
+                <div class="tech-border rounded-lg bg-gray-900 bg-opacity-50 overflow-hidden">
+                    <div class="logo-container p-2">
+                        <img src="/api/placeholder/120/120" alt="社区 1" class="w-full h-full object-contain" />
+                    </div>
+                </div>
+                <div class="tech-border rounded-lg bg-gray-900 bg-opacity-50 overflow-hidden">
+                    <div class="logo-container p-2">
+                        <img src="/api/placeholder/120/120" alt="社区 2" class="w-full h-full object-contain" />
+                    </div>
+                </div>
+                <div class="tech-border rounded-lg bg-gray-900 bg-opacity-50 overflow-hidden">
+                    <div class="logo-container p-2">
+                        <img src="/api/placeholder/120/120" alt="社区 3" class="w-full h-full object-contain" />
+                    </div>
+                </div>
+                <div class="tech-border rounded-lg bg-gray-900 bg-opacity-50 overflow-hidden">
+                    <div class="logo-container p-2">
+                        <img src="/api/placeholder/120/120" alt="社区 4" class="w-full h-full object-contain" />
+                    </div>
+                </div>
+                <div class="tech-border rounded-lg bg-gray-900 bg-opacity-50 overflow-hidden">
+                    <div class="logo-container p-2">
+                        <img src="/api/placeholder/120/120" alt="社区 5" class="w-full h-full object-contain" />
+                    </div>
+                </div>
+                <!-- Repeat for remaining 15 community partners -->
+                <!-- Note: In actual implementation, all 20 divs would be present -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
